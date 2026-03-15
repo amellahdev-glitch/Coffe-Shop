@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Bungee+Spice&family=Crafty+Girls&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Fredericka+the+Great&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Marck+Script&family=Merienda:wght@300..900&family=Momo+Trust+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#home {
+    background-color: var(--primary-color);
+    height: 80vh;
+    width: 100%;
+}
+
+/*! variables */
+
+:root {
+    --primary-color: #EFE7D8;
+    --secondary-color: #CFA14E;
+}
+
+/*? navbar syle */
+
+#navbar {
+    width: 100vw;
+}
+
+#navbar ul {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    display: block;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    font-size: 20px;
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0;
+    transition-duration: 0.1s;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 4px solid black;
+    padding-bottom: 4px;
+}
+
+
+#navbar ul li a:first-child {
+    color: #454141;
+}
+
+/*? container of the main page */
+
+#home .container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#home .container p {
+    display: block;
+}
+
+#home .container .order-btn button {
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 24px 43px;
+    transform: scale(1);
+    background-color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+#home .container .order-btn button:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #000;
+}
+
+#home .container .order-btn button a {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Products page */
+.product-page {
+    background-color: var(--secondary-color);
+}
+
+.product-page h1 {
+    color: #000;
+    font-size: 50px;
+    padding: 40px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-page .product-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 7px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin: 20px 10px;
+}
+
+.product-img img:hover {
+    transform: scale(1.03);
+}
+
+form {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    border: 1px solid black;
+    color: #484848;
+    padding: 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid var(--secondary-color);
+}
+
+form select {
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+form textarea {
+    min-width: fit-content;
+    height: 10rem;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+form button {
+    width: fit-content;
+    margin-top: 10px;
+    background-color: #333333;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #333333;
+    transition-duration: 0.2s;
+}
+
+form button:hover {
+    background-color: #6e6e6e;
+    box-shadow: 0 0 5px #333333;
+}
+
+/*? map iframe*/
+
+#map {
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+}
+
+#map h1 {
+    text-align: center;
+    font-size: 60px;
+    border-bottom: 5px solid #000;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#map iframe {
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+}
