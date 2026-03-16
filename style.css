@@ -47,6 +47,7 @@ body {
 #navbar ul li {
     display: block;
     margin: 0 15px;
+    position: relative;
 }
 
 #navbar ul li a {
@@ -62,11 +63,32 @@ body {
 #navbar ul li a:hover {
     border-bottom: 4px solid black;
     padding-bottom: 4px;
+    border-radius: 3px;
 }
 
 
-#navbar ul li a:first-child {
-    color: #454141;
+#navbar ul li a.active {
+    border-bottom: 3px solid black;
+    padding-bottom: 4px;
+}
+
+.hidden_link {
+    display: none;
+    position: absolute;
+    top: 5vh;
+    margin: none;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    width: 200px;
+    font-weight: bold;
+}
+
+.hidden_link a {
+    border: none !important;
 }
 
 /*? container of the main page */
