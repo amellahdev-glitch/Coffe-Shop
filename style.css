@@ -72,24 +72,6 @@ body {
     padding-bottom: 4px;
 }
 
-.hidden_link {
-    display: none;
-    position: absolute;
-    top: 5vh;
-    margin: none;
-    border: 2px solid var(--secondary-color);
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 15px;
-    text-decoration: none;
-    width: 200px;
-    font-weight: bold;
-}
-
-.hidden_link a {
-    border: none !important;
-}
 
 /*? container of the main page */
 
@@ -249,4 +231,76 @@ form button:hover {
     padding: 10px;
     margin: 0 auto;
     border: none;
+}
+
+/***? footer */
+footer {
+    height: 40vh;
+}
+
+
+footer .footer-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footer-content .icons-contaiener {
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-content .icons-contaiener a i {
+    font-size: 30px;
+    color: #000050;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+footer .footer-content .icons-contaiener a i:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+footer .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .pages a {
+    font-size: 20px;
+    color: #000050;
+}
+
+footer .pages a:hover {
+    color: #000;
+    border-bottom: 2px solid #000050;
+    width: fit-content;
+}
+
+footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .info h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #000050;
+    height: 5vh;
+}
+
+footer .copyright p {
+    margin: 0;
+    font-size: 20px;
 }

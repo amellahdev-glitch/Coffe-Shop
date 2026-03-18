@@ -34,19 +34,5 @@ productContainers.forEach(container => {
     });
 });
 
-// get hidden link element
-const hiddenLink = document.querySelector('.hidden_link');
-const menuLink = document.getElementById('menu');
 
-menuLink.addEventListener('mouseover', () => {
-    hiddenLink.style.display = "block";
-}
-);
-
-menuLink.addEventListener('mouseleave', () => {
-    timeout = setTimeout(() => {
-        hiddenLink.style.display = "none";
-    }, 2000);
-}
-);
 

@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: var(--primary-color);
+}
+
+/*! variable */
+
+:root {
+    --primary-color: #EFE7D8;
+    --secondary-color: #CFA14E;
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    background-color: var(--primary-color);
+}
+
+/*? navbar syle */
+
+#navbar {
+    width: 100vw;
+}
+
+#navbar ul {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    display: block;
+    margin: 0 15px;
+    position: relative;
+}
+
+#navbar ul li a {
+    font-size: 20px;
+    color: #000;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0;
+    transition-duration: 0.1s;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 4px solid black;
+    padding-bottom: 4px;
+    border-radius: 3px;
+}
+
+
+#navbar ul li a.active {
+    border-bottom: 3px solid black;
+    padding-bottom: 4px;
+}
+
+/* menu image */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***? footer */
+footer {
+    height: 40vh;
+    width: 100vw;
+    background-color: #fff;
+    margin: 0;
+}
+
+
+footer .footer-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footer-content .icons-contaiener {
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-content .icons-contaiener a i {
+    font-size: 30px;
+    color: #000050;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+footer .footer-content .icons-contaiener a i:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+footer .pages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .pages a {
+    font-size: 20px;
+    color: #000050;
+}
+
+footer .pages a:hover {
+    color: #000;
+    border-bottom: 2px solid #000050;
+    width: fit-content;
+}
+
+footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .info h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    height: 5vh;
+}
+
+footer .copyright p {
+    margin: 0;
+    font-size: 20px;
+}
