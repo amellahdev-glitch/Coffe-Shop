@@ -30,8 +30,8 @@ header {
     background-color: var(--primary-color);
 }
 
-/*? navbar syle */
 
+/* navbar style */
 #navbar {
     width: 100vw;
 }
@@ -87,35 +87,111 @@ header {
 }
 
 
+/* content style */
+
+.section-container {
+    display: flex;
+    height: 50vh;
+    background-color: #000;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.story-container h2 {
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.story-container p {
+    width: 50%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.location-img {
+    margin: auto;
+}
+
+.location-img img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*___________________________*/
+
+
+.container {
+    display: flex;
+    padding: 30px 0;
+    font-family: sans-serif;
+}
+
+
+.container .coffe-lab {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .coffe-lab img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container .text-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .text-container h1 {
+    border-bottom: 2px solid #000;
+    width: fit-content;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.container .text-container p {
+    text-align: left;
+    width: 90%;
+}
+
+.container .text-container img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*___________________________*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***? footer */
 footer {
-    height: 40vh;
-    width: 100vw;
     background-color: #fff;
-    margin: 0;
+    padding: 50px 0;
 }
 
 
