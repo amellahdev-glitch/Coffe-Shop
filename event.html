@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Bungee+Spice&family=Crafty+Girls&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Fredericka+the+Great&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Marck+Script&family=Merienda:wght@300..900&family=Momo+Trust+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title>Event</title>
+</head>
+
+<body>
+
+
+    <main id="home">
+        <header>
+            <!-- navbar -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="menu.html" id="menu">Menu</a></li>
+                    <li><a href="story.html" id="story">Our Story</a></li>
+                    <li><a href="event.html" id="event" class="active">Events</a></li>
+                    <li><a href="contact.html" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="event-container">
+
+            <div class="event-container">
+                <h1 class="title">Events</h1>
+                <p>Collab with Creme Brew Lait!</p>
+                <p>Stay tuned for more exciting events!</p>
+                <div class="event-img">
+                    <img width="400px" src="event/CBL-Events_2.png" alt="">
+                    <img width="400px" src="event/CBL-Collab_1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <h1 class="title">Event Request Form</h1>
+            <form action="index.php" method="post" class="form-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event-type">Event Type:</label>
+                <select id="event-type" name="event-type" required>
+                    <option value="">Select an event type</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Additional Details:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer container -->
+
+    <footer>
+        <div class="footer-content">
+            <section class="icons-contaiener">
+                <a href="https://www.facebook.com/cremebrewlait" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/cremebrewlait/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/cremebrewlait" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://gmail.com"><i class="fa-brands fa-google"></i></a>
+            </section>
+            <section class="pages">
+                <a href="#home">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="story.html">Our Story</a>
+                <a href="event.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </section>
+            <section class="info">
+                <h3>Open Monday through Saturday</h3>
+                <h3>6:00 AM - 6:00 PM</h3>
+                <h3>(256) 671-0420</h3>
+                <h3>contact@cremebrewlait.com</h3>
+            </section>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Creme Brew Lait. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
