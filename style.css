@@ -16,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+
 }
 
 #home {
@@ -303,4 +304,112 @@ footer .copyright {
 footer .copyright p {
     margin: 0;
     font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: var(--primary-color);
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        width: 100vw;
+        padding: 10px;
+        border-bottom: 2px solid #000;
+        border-radius: 5px;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        height: fit-content;
+        gap: 10px;
+    }
+
+    #navbar ul li a {
+        font-size: 18px;
+    }
+
+
+    #navbar ul li a.active {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+
+    /* products page */
+    .product-page .wrapped-content {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .product-page .product-container img {
+        width: 40vw;
+    }
+
+    /* form */
+    .main-form {
+        padding: 0 !important;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* map */
+
+    #map {
+
+        height: fit-content;
+        padding: 20px 0;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #map h1 {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+
+    #map iframe {
+        width: 90%;
+        height: 300px;
+    }
+
+
+    /* footer */
+
+
+    footer {
+        height: 40vh;
+        background-color: #fff;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content .icons-contaiener {
+        justify-content: center;
+        order: 2;
+    }
+
+    .footer-content .pages {
+        order: 1;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
 }
