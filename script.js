@@ -35,4 +35,11 @@ productContainers.forEach(container => {
 });
 
 
+//! navbar js
+const menuIcon = document.querySelector('#navbar .menu');
+const navLinks = document.querySelector('#navbar ul');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
