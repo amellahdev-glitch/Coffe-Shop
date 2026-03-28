@@ -18,13 +18,14 @@
     <!-- Contact Section -->
     <header>
         <nav id="navbar">
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="../menu/menu.html">Menu</a></li>
+            <ul class="">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="../Menu/menu.html">Menu</a></li>
                 <li><a href="../story/story.html">Our Story</a></li>
                 <li><a href="../event/event.html">Events</a></li>
-                <li><a href="../contact/contact.html" class="active">Contact</a></li>
+                <li><a href="contact/contact.html">Contact</a></li>
             </ul>
+            <i class="fa-solid fa-bars menu"></i>
         </nav>
     </header>
 
@@ -92,6 +93,16 @@
             <p>&copy; 2026 Creme Brew Lait. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const menuIcon = document.querySelector('#navbar .menu');
+        const navLinks = document.querySelector('#navbar ul');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
 </body>
 
 </html>
