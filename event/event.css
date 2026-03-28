@@ -36,6 +36,13 @@ header {
     width: 100vw;
 }
 
+#navbar .menu {
+    display: none;
+    z-index: 1000;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 #navbar ul {
     height: 10vh;
     display: flex;
