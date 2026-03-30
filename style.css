@@ -4,17 +4,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
 }
 
 body {
     width: 100vw;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
     font-style: normal;
 
 }
@@ -440,23 +439,38 @@ footer .copyright p {
         height: 40vh;
         background-color: #fff;
         padding: 20px 0;
-        gap: 20px;
+
     }
 
     footer .footer-content {
         flex-direction: column;
-        gap: 20px;
     }
+
 
     .footer-content .icons-contaiener {
         justify-content: center;
         order: 2;
     }
 
+    .footer-content .icons-contaiener i {
+        font-size: 17px;
+    }
+
+
+
+
     .footer-content .pages {
         order: 1;
         flex-direction: row;
-        gap: 20px;
+        gap: 15px;
         justify-content: center;
+    }
+
+    .footer-content .pages a {
+        font-size: 20px;
+    }
+
+    .footer-content .info h3 {
+        font-size: 16px;
     }
 }
