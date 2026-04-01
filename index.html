@@ -86,19 +86,19 @@
     <main class="main-form" style="padding: 100px 190px; background-color: #EFE7D8;">
         <div class="container">
             <h1>Say Hey:</h1>
-            <form action="index.php" method="post">
+            <form action="index.php" method="post" id="form">
                 <label for="name">Name<span>*</span></label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
                 <label for="email">Email Address<span>*</span></label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label for="option">Subscribe to monthly cremebrewlait email updates?</label>
-                <select name="option" id="option">
+                <select name="option" id="option" required>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
                 <label for="message">Message:</label>
-                <textarea name="massage" id="message" placeholder="Enter your message her"></textarea>
-                <button type="submit">Submit</button>
+                <textarea name="massage" id="message" placeholder="Enter your message her" required></textarea>
+                <button type="submit" id="submit">Submit</button>
             </form>
         </div>
     </main>
