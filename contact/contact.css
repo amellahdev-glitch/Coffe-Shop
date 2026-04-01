@@ -198,7 +198,7 @@ footer .footer-content .icons-contaiener {
 
 footer .footer-content .icons-contaiener a i {
     font-size: 30px;
-    color: #000050;
+    color: #000;
     transition-duration: 0.2s;
     cursor: pointer;
 }
@@ -223,6 +223,7 @@ footer .pages a:hover {
     color: #000;
     border-bottom: 2px solid #000050;
     width: fit-content;
+    font-weight: bold;
 }
 
 footer .info {
@@ -345,6 +346,7 @@ footer .copyright p {
         font-size: 17px;
     }
 
+
     .footer-content .pages {
         order: 1;
         flex-direction: row;
@@ -358,5 +360,13 @@ footer .copyright p {
 
     .footer-content .info h3 {
         font-size: 16px;
+    }
+
+    footer .copyright {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        margin: 0;
     }
 }

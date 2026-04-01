@@ -189,7 +189,7 @@ header {
 }
 
 .container .text-container img {
-    width: 200px;
+    width: fit-content;
     height: 300px;
     object-fit: cover;
 }
@@ -200,7 +200,7 @@ header {
 
 footer {
     background-color: #fff;
-    padding: 50px 0;
+    height: 40vh;
 }
 
 
@@ -219,7 +219,7 @@ footer .footer-content .icons-contaiener {
 
 footer .footer-content .icons-contaiener a i {
     font-size: 30px;
-    color: #000050;
+    color: #000;
     transition-duration: 0.2s;
     cursor: pointer;
 }
@@ -237,13 +237,14 @@ footer .pages {
 
 footer .pages a {
     font-size: 20px;
-    color: #000050;
+    color: #000;
 }
 
 footer .pages a:hover {
     color: #000;
     border-bottom: 2px solid #000050;
     width: fit-content;
+    font-weight: bold;
 }
 
 footer .info {
@@ -261,14 +262,16 @@ footer .info h3 {
 footer .copyright {
     text-align: center;
     font-size: 14px;
-    background-color: white;
+    color: #000050;
     height: 5vh;
+    background-color: #fff;
 }
 
 footer .copyright p {
     margin: 0;
     font-size: 20px;
 }
+
 
 @media (max-width: 768px) and (min-width: 320px) {
 
@@ -343,7 +346,6 @@ footer .copyright p {
         align-items: center;
         gap: 10px;
         width: 100vw;
-
     }
 
 
@@ -354,6 +356,8 @@ footer .copyright p {
         display: flex;
         flex-direction: row;
     }
+
+
 
     .container .text-container {
         width: 100%;
@@ -384,8 +388,6 @@ footer .copyright p {
     }
 
 
-
-
     .footer-content .pages {
         order: 1;
         flex-direction: row;
@@ -395,10 +397,17 @@ footer .copyright p {
 
     .footer-content .pages a {
         font-size: 20px;
-        text-decoration: none;
     }
 
     .footer-content .info h3 {
         font-size: 16px;
+    }
+
+    footer .copyright {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        margin: 0;
     }
 }

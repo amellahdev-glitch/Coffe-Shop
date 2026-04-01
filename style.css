@@ -280,7 +280,6 @@ footer .pages {
 footer .pages a {
     font-size: 20px;
     color: #000;
-    transition: font-weight 0.3s;
 }
 
 footer .pages a:hover {
